@@ -8,7 +8,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-//Written in Global Repository
+//Written in Global Repository(Github)
+//Written in Local Repository(Git)
 public class BaseTest implements IAutoConstants
 {
 	public static WebDriver driver;
