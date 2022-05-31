@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.SinnVoll.Invoices.VerifyInvoicesTabTest"/>
+      <class name="com.SinnVoll.PriceBooks.VerifyPriceBooksTabTest"/>
+      <class name="com.SinnVoll.Leads.VerifyLeadsTabTest"/>
+      <class name="com.SinnVoll.PurchaseOrders.VerifyPurchaseOdersTabTest"/>
+      <class name="com.SinnVoll.SalesOrders.VerifySalesOrdersTabTest"/>
+      <class name="com.SinnVoll.Quotes.VerifyQuotesTabTest"/>
+      <class name="com.SinnVoll.Solutions.VerifySolutionsTabText"/>
+      <class name="com.SinnVoll.Products.VerifyProductsTabTest"/>
+      <class name="com.SinVoll.Cases.VerifyCasesTabTest"/>
+      <class name="com.SinnVoll.Accounts.VerifyAccountsTabTest"/>
+      <class name="com.SinnVoll.Dashboards.VerifyDashboardsTabTest"/>
+      <class name="com.SinnVoll.Login.ValidSignInTest"/>
+      <class name="com.SinVoll.Contacts.VerifyContactsTab"/>
+      <class name="com.SinnVoll.Activities.VerifyActivitiesTabTest"/>
+      <class name="com.SinnVoll.Reports.VerifyReportsTabTest"/>
+      <class name="com.SinnVoll.Campaigns.VerifyCampaignsTabTest"/>
+      <class name="com.SinnVoll.Vendors.VerifyVendorsTabTest"/>
+      <class name="com.SinnVoll.Potentials.VerifyPotentialsTabTest"/>
+      <class name="com.SinnVoll.Forecasts.VerifyForeCastsTabTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

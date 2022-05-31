@@ -1,0 +1,712 @@
+<html>
+<head>
+<title>TestNG:  GayathriTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>GayathriTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 23 16:27:37 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>106 seconds (106350 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.SinnVoll.PurchaseOrders.VerifyPurchaseOdersTabTest.verifyPurchaseOdersTab()'><b>verifyPurchaseOdersTab</b><br>Test class: com.SinnVoll.PurchaseOrders.VerifyPurchaseOdersTabTest<br/>
+<a href="#Output-1988664928" onClick='toggleBox("Output-1988664928", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1988664928" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1988664928">
+verifyPurchaseOdersTab method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+verifyPurchaseOdersTab method FAILED<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;DESKTOP-VC14B0M&apos;, ip: &apos;192.168.229.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52972532e1edb680bf39228bc03b3fd2, clickElement {id=ce32fe8e-8cb7-4e31-8c84-5c163f44b757}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49194}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49194/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (52972532e1edb680bf39228bc03b3fd2)] -&gt; xpath: //a[text()=&apos;Purchase Orders&apos;]]
+Session ID: 52972532e1edb680bf39228bc03b3fd2
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy17.click(Unknown Source)
+	at com.SinnVoll.pages.HomePage.clickPurchaseOrderTab(HomePage.java:155)
+	at com.SinnVoll.PurchaseOrders.VerifyPurchaseOdersTabTest.verifyPurchaseOdersTab(VerifyPurchaseOdersTabTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1988664928", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1988664928'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;DESKTOP-VC14B0M&apos;, ip: &apos;192.168.229.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52972532e1edb680bf39228bc03b3fd2, clickElement {id=ce32fe8e-8cb7-4e31-8c84-5c163f44b757}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49194}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49194/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (52972532e1edb680bf39228bc03b3fd2)] -&gt; xpath: //a[text()=&apos;Purchase Orders&apos;]]
+Session ID: 52972532e1edb680bf39228bc03b3fd2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy17.click(Unknown Source)
+	at com.SinnVoll.pages.HomePage.clickPurchaseOrderTab(HomePage.java:155)
+	at com.SinnVoll.PurchaseOrders.VerifyPurchaseOdersTabTest.verifyPurchaseOdersTab(VerifyPurchaseOdersTabTest.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>com.SinnVoll.PurchaseOrders.VerifyPurchaseOdersTabTest@4d0f2471</td></tr>
+<tr>
+<td title='com.SinnVoll.Quotes.VerifyQuotesTabTest.verifyQuotesTab()'><b>verifyQuotesTab</b><br>Test class: com.SinnVoll.Quotes.VerifyQuotesTabTest<br/>
+<a href="#Output-499339307" onClick='toggleBox("Output-499339307", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-499339307" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-499339307">
+verifyQuotesTab method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+verifyQuotesTab method FAILED<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;DESKTOP-VC14B0M&apos;, ip: &apos;192.168.229.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac4ef323da04000dfc0a8690e8266212, clickElement {id=0f2a5648-aae4-4d24-8f8e-2fd1561bae34}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49254}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49254/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ac4ef323da04000dfc0a8690e8266212)] -&gt; xpath: //a[text()=&apos;Quotes&apos;]]
+Session ID: ac4ef323da04000dfc0a8690e8266212
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy17.click(Unknown Source)
+	at com.SinnVoll.pages.HomePage.clickQuotesTab(HomePage.java:141)
+	at com.SinnVoll.Quotes.VerifyQuotesTabTest.verifyQuotesTab(VerifyQuotesTabTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace499339307", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace499339307'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;DESKTOP-VC14B0M&apos;, ip: &apos;192.168.229.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac4ef323da04000dfc0a8690e8266212, clickElement {id=0f2a5648-aae4-4d24-8f8e-2fd1561bae34}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49254}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49254/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ac4ef323da04000dfc0a8690e8266212)] -&gt; xpath: //a[text()=&apos;Quotes&apos;]]
+Session ID: ac4ef323da04000dfc0a8690e8266212
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy17.click(Unknown Source)
+	at com.SinnVoll.pages.HomePage.clickQuotesTab(HomePage.java:141)
+	at com.SinnVoll.Quotes.VerifyQuotesTabTest.verifyQuotesTab(VerifyQuotesTabTest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>com.SinnVoll.Quotes.VerifyQuotesTabTest@3232a28a</td></tr>
+<tr>
+<td title='com.SinnVoll.Invoices.VerifyInvoicesTabTest.verifyInvoicesTab()'><b>verifyInvoicesTab</b><br>Test class: com.SinnVoll.Invoices.VerifyInvoicesTabTest<br/>
+<a href="#Output-681979935" onClick='toggleBox("Output-681979935", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-681979935" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-681979935">
+verifyInvoicesTab method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+verifyInvoicesTab method FAILED<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;DESKTOP-VC14B0M&apos;, ip: &apos;192.168.229.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6b5a2fea55bc4d54bd5792a824c7de2d, clickElement {id=3c04bd33-54c7-4fca-8500-570b6d7551f4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65512}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65512/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6b5a2fea55bc4d54bd5792a824c7de2d)] -&gt; xpath: //a[text()=&apos;Invoices&apos;]]
+Session ID: 6b5a2fea55bc4d54bd5792a824c7de2d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy17.click(Unknown Source)
+	at com.SinnVoll.pages.HomePage.clickInvoicesTab(HomePage.java:162)
+	at com.SinnVoll.Invoices.VerifyInvoicesTabTest.verifyInvoicesTab(VerifyInvoicesTabTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace681979935", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace681979935'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;DESKTOP-VC14B0M&apos;, ip: &apos;192.168.229.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6b5a2fea55bc4d54bd5792a824c7de2d, clickElement {id=3c04bd33-54c7-4fca-8500-570b6d7551f4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65512}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65512/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6b5a2fea55bc4d54bd5792a824c7de2d)] -&gt; xpath: //a[text()=&apos;Invoices&apos;]]
+Session ID: 6b5a2fea55bc4d54bd5792a824c7de2d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy17.click(Unknown Source)
+	at com.SinnVoll.pages.HomePage.clickInvoicesTab(HomePage.java:162)
+	at com.SinnVoll.Invoices.VerifyInvoicesTabTest.verifyInvoicesTab(VerifyInvoicesTabTest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>com.SinnVoll.Invoices.VerifyInvoicesTabTest@bd4dc25</td></tr>
+<tr>
+<td title='com.SinnVoll.SalesOrders.VerifySalesOrdersTabTest.verifySalesOrdersTab()'><b>verifySalesOrdersTab</b><br>Test class: com.SinnVoll.SalesOrders.VerifySalesOrdersTabTest<br/>
+<a href="#Output-1323676377" onClick='toggleBox("Output-1323676377", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1323676377" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1323676377">
+verifySalesOrdersTab method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+verifySalesOrdersTab method FAILED<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;DESKTOP-VC14B0M&apos;, ip: &apos;192.168.229.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a846800ca05e13daa2da627f2e2b1f0, clickElement {id=d0e301d5-35d5-4f4d-832c-570a1d2bcedd}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49226}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49226/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0a846800ca05e13daa2da627f2e2b1f0)] -&gt; xpath: //a[text()=&apos;Sales Orders&apos;]]
+Session ID: 0a846800ca05e13daa2da627f2e2b1f0
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy17.click(Unknown Source)
+	at com.SinnVoll.pages.HomePage.clickSalesOrderTab(HomePage.java:148)
+	at com.SinnVoll.SalesOrders.VerifySalesOrdersTabTest.verifySalesOrdersTab(VerifySalesOrdersTabTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1323676377", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1323676377'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
+System info: host: &apos;DESKTOP-VC14B0M&apos;, ip: &apos;192.168.229.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a846800ca05e13daa2da627f2e2b1f0, clickElement {id=d0e301d5-35d5-4f4d-832c-570a1d2bcedd}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49226}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49226/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0a846800ca05e13daa2da627f2e2b1f0)] -&gt; xpath: //a[text()=&apos;Sales Orders&apos;]]
+Session ID: 0a846800ca05e13daa2da627f2e2b1f0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy17.click(Unknown Source)
+	at com.SinnVoll.pages.HomePage.clickSalesOrderTab(HomePage.java:148)
+	at com.SinnVoll.SalesOrders.VerifySalesOrdersTabTest.verifySalesOrdersTab(VerifySalesOrdersTabTest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>com.SinnVoll.SalesOrders.VerifySalesOrdersTabTest@7133da86</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.SinnVoll.PriceBooks.VerifyPriceBooksTabTest.verifyPriceBooksTab()'><b>verifyPriceBooksTab</b><br>Test class: com.SinnVoll.PriceBooks.VerifyPriceBooksTabTest<br/>
+<a href="#Output-1931008760" onClick='toggleBox("Output-1931008760", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1931008760" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1931008760">
+verifyPriceBooksTab method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+Price Books: All Price Books <br/>
+PriceBook Text is Displayed<br/>
+verifyPriceBooksTab method PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.SinnVoll.PriceBooks.VerifyPriceBooksTabTest@5562c41e</td></tr>
+<tr>
+<td title='com.SinnVoll.Solutions.VerifySolutionsTabText.verifySolutionsTab()'><b>verifySolutionsTab</b><br>Test class: com.SinnVoll.Solutions.VerifySolutionsTabText<br/>
+<a href="#Output-6214844" onClick='toggleBox("Output-6214844", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6214844" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6214844">
+verifySolutionsTab method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+Solutions: All Solutions <br/>
+Solutions Text is Displayed<br/>
+verifySolutionsTab method PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.SinnVoll.Solutions.VerifySolutionsTabText@73e22a3d</td></tr>
+<tr>
+<td title='com.SinnVoll.Campaigns.VerifyCampaignsTabTest.verifyPotentialsTab()'><b>verifyPotentialsTab</b><br>Test class: com.SinnVoll.Campaigns.VerifyCampaignsTabTest<br/>
+<a href="#Output-1337347604" onClick='toggleBox("Output-1337347604", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1337347604" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1337347604">
+verifyPotentialsTab method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+Campaigns: All Campaigns <br/>
+Campaigns Text is Displayed<br/>
+verifyPotentialsTab method PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.SinnVoll.Campaigns.VerifyCampaignsTabTest@169e6180</td></tr>
+<tr>
+<td title='com.SinnVoll.Vendors.VerifyVendorsTabTest.verifyVendorsTab()'><b>verifyVendorsTab</b><br>Test class: com.SinnVoll.Vendors.VerifyVendorsTabTest<br/>
+<a href="#Output-2039783633" onClick='toggleBox("Output-2039783633", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2039783633" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2039783633">
+verifyVendorsTab method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+Vendors: All Vendors <br/>
+Vendors Text is Displayed<br/>
+verifyVendorsTab method PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.SinnVoll.Vendors.VerifyVendorsTabTest@35aea049</td></tr>
+<tr>
+<td title='com.SinnVoll.Activities.VerifyActivitiesTabTest.verifyActivitiesTab()'><b>verifyActivitiesTab</b><br>Test class: com.SinnVoll.Activities.VerifyActivitiesTabTest<br/>
+<a href="#Output-1902527840" onClick='toggleBox("Output-1902527840", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1902527840" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1902527840">
+verifyActivitiesTab method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+Activities: All Activities <br/>
+Activities Text is Displayed<br/>
+verifyActivitiesTab method PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.SinnVoll.Activities.VerifyActivitiesTabTest@20ccf40b</td></tr>
+<tr>
+<td title='com.SinnVoll.Forecasts.VerifyForeCastsTabTest.verifyForecastsTab()'><b>verifyForecastsTab</b><br>Test class: com.SinnVoll.Forecasts.VerifyForeCastsTabTest<br/>
+<a href="#Output-1921167141" onClick='toggleBox("Output-1921167141", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1921167141" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1921167141">
+verifyForecastsTab method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+Forecasts: All Forecasts <br/>
+Forecasts Text is Displayed<br/>
+verifyForecastsTab method PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.SinnVoll.Forecasts.VerifyForeCastsTabTest@47987356</td></tr>
+<tr>
+<td title='com.SinnVoll.Dashboards.VerifyDashboardsTabTest.verifyDashboardsTab()'><b>verifyDashboardsTab</b><br>Test class: com.SinnVoll.Dashboards.VerifyDashboardsTabTest<br/>
+<a href="#Output-422882684" onClick='toggleBox("Output-422882684", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-422882684" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-422882684">
+verifyDashboardsTab method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+Dashboards<br/>
+Dashboards Text is Displayed<br/>
+verifyDashboardsTab method PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.SinnVoll.Dashboards.VerifyDashboardsTabTest@4229bb3f</td></tr>
+<tr>
+<td title='com.SinVoll.Cases.VerifyCasesTabTest.verifyCasesTab()'><b>verifyCasesTab</b><br>Test class: com.SinVoll.Cases.VerifyCasesTabTest<br/>
+<a href="#Output-634440506" onClick='toggleBox("Output-634440506", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-634440506" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-634440506">
+verifyCasesTab method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+Cases: All Cases <br/>
+Cases Text is Displayed<br/>
+verifyCasesTab method PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.SinVoll.Cases.VerifyCasesTabTest@6da21078</td></tr>
+<tr>
+<td title='com.SinVoll.Contacts.VerifyContactsTab.verifyContactsModule()'><b>verifyContactsModule</b><br>Test class: com.SinVoll.Contacts.VerifyContactsTab<br/>
+<a href="#Output-1872627924" onClick='toggleBox("Output-1872627924", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1872627924" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1872627924">
+verifyContactsModule method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+Contacts: All Contacts <br/>
+Contact Text is Displayed<br/>
+verifyContactsModule method PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.SinVoll.Contacts.VerifyContactsTab@2b91004a</td></tr>
+<tr>
+<td title='com.SinnVoll.Products.VerifyProductsTabTest.verifyProductsTab()'><b>verifyProductsTab</b><br>Test class: com.SinnVoll.Products.VerifyProductsTabTest<br/>
+<a href="#Output-1813838419" onClick='toggleBox("Output-1813838419", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1813838419" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1813838419">
+verifyProductsTab method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+Products: All Products <br/>
+Products Text is Displayed<br/>
+verifyProductsTab method PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.SinnVoll.Products.VerifyProductsTabTest@f736069</td></tr>
+<tr>
+<td title='com.SinnVoll.Potentials.VerifyPotentialsTabTest.verifyPotentialsTab()'><b>verifyPotentialsTab</b><br>Test class: com.SinnVoll.Potentials.VerifyPotentialsTabTest<br/>
+<a href="#Output-549160372" onClick='toggleBox("Output-549160372", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-549160372" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-549160372">
+verifyPotentialsTab method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+Potentials: All Potentials <br/>
+Potentials Text is Displayed<br/>
+verifyPotentialsTab method PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.SinnVoll.Potentials.VerifyPotentialsTabTest@7205765b</td></tr>
+<tr>
+<td title='com.SinnVoll.Reports.VerifyReportsTabTest.verifyReportsTab()'><b>verifyReportsTab</b><br>Test class: com.SinnVoll.Reports.VerifyReportsTabTest<br/>
+<a href="#Output-1422140849" onClick='toggleBox("Output-1422140849", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1422140849" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1422140849">
+verifyReportsTab method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+Reports<br/>
+Reports Text is Displayed<br/>
+verifyReportsTab method PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.SinnVoll.Reports.VerifyReportsTabTest@2fb3536e</td></tr>
+<tr>
+<td title='com.SinnVoll.Leads.VerifyLeadsTabTest.VerifyLeadsModule()'><b>VerifyLeadsModule</b><br>Test class: com.SinnVoll.Leads.VerifyLeadsTabTest<br/>
+<a href="#Output-296974277" onClick='toggleBox("Output-296974277", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-296974277" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-296974277">
+VerifyLeadsModule method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+Leads: All Open Leads <br/>
+VerifyLeadsModule method PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.SinnVoll.Leads.VerifyLeadsTabTest@32ee6fee</td></tr>
+<tr>
+<td title='com.SinnVoll.Accounts.VerifyAccountsTabTest.VerifyAccountsModule()'><b>VerifyAccountsModule</b><br>Test class: com.SinnVoll.Accounts.VerifyAccountsTabTest<br/>
+<a href="#Output-1183912264" onClick='toggleBox("Output-1183912264", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1183912264" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1183912264">
+VerifyAccountsModule method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+Accounts: All Accounts <br/>
+Accounts Text is Displayed<br/>
+VerifyAccountsModule method PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.SinnVoll.Accounts.VerifyAccountsTabTest@7fee8714</td></tr>
+<tr>
+<td title='com.SinnVoll.Login.ValidSignInTest.verifyValidSignIn()'><b>verifyValidSignIn</b><br>Test class: com.SinnVoll.Login.ValidSignInTest<br/>
+<a href="#Output-1329043305" onClick='toggleBox("Output-1329043305", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1329043305" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1329043305">
+verifyValidSignIn method STARTED<br/>
+Home Page is Dispalyed,PASS<br/>
+verifyValidSignIn method PASSED<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.SinnVoll.Login.ValidSignInTest@56cdfb3b</td></tr>
+</table><p>
+</body>
+</html>

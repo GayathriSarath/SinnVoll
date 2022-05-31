@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.SinnVoll.SalesOrders.VerifySalesOrdersTabTest">
+        <methods>
+          <include name="verifySalesOrdersTab"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.SinnVoll.SalesOrders.VerifySalesOrdersTabTest -->
+      <class name="com.SinnVoll.Invoices.VerifyInvoicesTabTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyInvoicesTab"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.SinnVoll.Invoices.VerifyInvoicesTabTest -->
+      <class name="com.SinnVoll.PurchaseOrders.VerifyPurchaseOdersTabTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="verifyPurchaseOdersTab"/>
+        </methods>
+      </class> <!-- com.SinnVoll.PurchaseOrders.VerifyPurchaseOdersTabTest -->
+      <class name="com.SinnVoll.Quotes.VerifyQuotesTabTest">
+        <methods>
+          <include name="verifyQuotesTab"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.SinnVoll.Quotes.VerifyQuotesTabTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
