@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeClass;
 
 //Written in Global Repository(Github)
 //Written in Local Repository(Git)
+//GitHub- Its a cloud based decentralized local repository.
 public class BaseTest implements IAutoConstants
 {
 	public static WebDriver driver;
