@@ -17,19 +17,19 @@
       <![CDATA[Accounts Text is Displayed]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-06-01T17:53:08 IST" name="Suite" finished-at="2022-06-01T17:53:13 IST" duration-ms="4696">
+  <suite started-at="2022-06-01T18:05:04 IST" name="Suite" finished-at="2022-06-01T18:05:09 IST" duration-ms="5052">
     <groups>
     </groups>
-    <test started-at="2022-06-01T17:53:08 IST" name="Test" finished-at="2022-06-01T17:53:13 IST" duration-ms="4696">
+    <test started-at="2022-06-01T18:05:04 IST" name="Test" finished-at="2022-06-01T18:05:09 IST" duration-ms="5052">
       <class name="com.SinnVoll.Accounts.VerifyAccountsTabTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.SinnVoll.Accounts.VerifyAccountsTabTest@503d687a]" started-at="2022-06-01T17:53:09 IST" name="openBrowser" finished-at="2022-06-01T17:53:11 IST" duration-ms="2820" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.SinnVoll.Accounts.VerifyAccountsTabTest@503d687a]" started-at="2022-06-01T18:05:05 IST" name="openBrowser" finished-at="2022-06-01T18:05:08 IST" duration-ms="3043" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Sign in Page is Dispalyed,PASS]]>
             </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="VerifyAccountsModule()[pri:0, instance:com.SinnVoll.Accounts.VerifyAccountsTabTest@503d687a]" started-at="2022-06-01T17:53:11 IST" name="VerifyAccountsModule" finished-at="2022-06-01T17:53:12 IST" duration-ms="955" status="PASS">
+        <test-method signature="VerifyAccountsModule()[pri:0, instance:com.SinnVoll.Accounts.VerifyAccountsTabTest@503d687a]" started-at="2022-06-01T18:05:08 IST" name="VerifyAccountsModule" finished-at="2022-06-01T18:05:09 IST" duration-ms="1002" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[VerifyAccountsModule method STARTED]]>
@@ -45,7 +45,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- VerifyAccountsModule -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.SinnVoll.Accounts.VerifyAccountsTabTest@503d687a]" started-at="2022-06-01T17:53:12 IST" name="closeBrowser" finished-at="2022-06-01T17:53:13 IST" duration-ms="614" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.SinnVoll.Accounts.VerifyAccountsTabTest@503d687a]" started-at="2022-06-01T18:05:09 IST" name="closeBrowser" finished-at="2022-06-01T18:05:09 IST" duration-ms="600" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
