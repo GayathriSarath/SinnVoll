@@ -16,6 +16,11 @@ import com.SinnVoll.pages.HomePage;
 //Verify Sign In Page
 public class VerifyActivitiesTabTest extends BaseTest
 {
+	
+	
+	
+	
+	
 	@Test
 	public void verifyActivitiesTab() throws Throwable
 	{
