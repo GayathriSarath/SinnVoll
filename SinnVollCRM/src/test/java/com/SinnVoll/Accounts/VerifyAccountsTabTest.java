@@ -28,6 +28,10 @@ public void VerifyAccountsModule() throws Throwable
 			HomePage hp=new HomePage();
 			hp.clickAccountsTab();
 			
+			
+			
+			
+			
 			WebDriverCommonLib wlib=new WebDriverCommonLib();
 			AccountsPage ap= new AccountsPage();
 			String text = ap.getAccountsText();
