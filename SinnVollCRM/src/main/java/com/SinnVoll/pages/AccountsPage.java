@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.SinnVoll.GenericLib.BaseTest;
 
+//Account Page
 public class AccountsPage
 {
 @FindBy(xpath="//td[contains(text(),'Accounts: ')]") private WebElement accountsText;
